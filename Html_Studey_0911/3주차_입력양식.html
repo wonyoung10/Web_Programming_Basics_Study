@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식</title>
+</head>
+<body>
+    <form action="전송위치" method="get"> <!--  url에 넣어서 전송  -->
+                <!-- <form action="전송위치" method="post">  눈에 안보이게 전송 -->
+        <!-- 사용자가 입력하는 양식 -->
+        <input type = "text">
+        <br>
+        <input type = "password">
+        <br>
+        <input type="file">
+        <br>
+        <input type="checkbox">
+        <br>
+        <input type="radio">
+        <br>
+        <hr>
+        <!-- 보이지 않는 양식 -->
+        <input type="hidden">
+        <br>
+
+        <hr>
+        <br>
+        <!-- 버튼 -->
+        <!-- submit, reset 특성이 비슷 -->
+        <input type="submit">
+        <br>
+        <input type = "reset">
+        
+        <br>
+        <input type = "button">
+        
+        <br>
+        <input type = "image" src = "">
+        <br>
+        <input type = "button">
+
+    </form>
+    <br>
+    <hr>
+    <br>
+    <form action = "">
+        <fieldset>
+            <legend>기본 정보</legend>
+            <input type="text">
+            <input type= "submit">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>입력양식</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">
+                        이름
+                        </label>
+                    </td>
+                    <td> 
+                        <input type="text" id = "name"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mail">메일</label>
+                    </td>
+                    <td>
+                        <input type="email" id = "mail">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <br>
+    <hr>
+    <br>
+    
+    <textarea name = "" id = "">여기에 리뷰를 작성해주세요</textarea>
+    <br>
+    <select name="" id="">
+        <option value="">김밥</option>
+        <option value="">떡볶이</option>
+        <option value="">순대</option>
+        <option value="">어묵</option>
+    </select>
+
+
+    
+</body>
+</html>
