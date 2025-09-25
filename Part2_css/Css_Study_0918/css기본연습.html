@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 기본 연습</title>
+    <style>
+        /* 기본 선택자 */
+        *{
+            margin : 0px;
+        }
+        #a1 {
+            color : red;
+        }
+        #a2 {
+            color: orange;
+        }
+        .a3 {
+            color: yellow;
+        }
+        .a4 {
+         color: green;
+        }
+        .a5 {
+            color: blue;
+        }
+        div {
+            background-color: bisque;
+        }
+        /* 속성 선택자 */
+        input[type] {border: 1px solid pink;}
+        input[type="text"] {
+            background-color: greenyellow;
+        }
+        input[type="password"] {
+            background-color: yellow;
+        }
+
+        /* 후손 선택자 */
+        div ul li {
+            font-size: 20px;
+            background-color: chocolate;
+        }
+
+        /* 자식 선택자 */
+        div > ul > li {
+            font-weight: bold;
+
+        }
+        /* p.144 구조선택자*/
+        li:first-child {
+            border-radius: 10px;
+        }
+        li:last-child {
+            border-radius:  10px;
+        }
+        li:nth-child(2n) {
+            background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li id ="a1">빨강</li>
+            <li id = "a2">주황</li>
+            <li class = "a3">노랑</li>
+            <li class = "a4">초록</li>
+            <li class = "a5">파랑</li>
+        </ul>
+    </div>
+    <input type="text">
+    <input type="password">
+</body>
+</html>
+
+<!-- css Diner css를 연습 할수 있는 사이트 -->

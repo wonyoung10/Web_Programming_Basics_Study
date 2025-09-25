@@ -80,3 +80,19 @@
   .a5 { color: blue; }
   input[type="text"] { background-color: greenyellow; }
   input[type="password"] { background-color: yellow; }
+  a,b
+
+
+## 0925 (5주차 학습)
+id : 한번만 사용가능
+class : 여러번 사용가능
+/* 반응선택자 */
+h1:active {color : aqua;}
+h1:hover {color : rgb(244,123,242);}
+
+
+/* 상태선택자 */
+:checked
+:focus
+:enabled
+:disabled

@@ -47,7 +47,7 @@
             font-weight: bold;
 
         }
-        /* p.144 구조선택잔*/
+        /* p.144 구조선택자*/
         li:first-child {
             border-radius: 10px;
         }
@@ -57,6 +57,16 @@
         li:nth-child(2n) {
             background-color: darkslategray;
         }
+        /* 반응선택자 */
+        h1:active {color : aqua;}
+        h1:hover {color : rgb(244,123,242);}
+
+
+        /* 상태선택자 */
+        input:checked{}
+        input:focus{}
+        input:enabled{}
+        input:disabled{}
     </style>
 </head>
 <body>
@@ -71,7 +81,9 @@
     </div>
     <input type="text">
     <input type="password">
+
+    <h1>반응 선택자</h1>
 </body>
 </html>
 
-<!-- css Diner css를 연습 할수 있는 사이트 -->
+/* <!-- css Diner css를 연습 할수 있는 사이트 --> */
