@@ -5,9 +5,7 @@
 - [0904 (2주차 학습)](#0904-2주차-학습)  
 - [0911 (3주차 학습)](#0911-3주차-학습)  
 - [0918 (4주차 학습)](#0918-4주차-학습)  
-- [추가 주차 템플릿](#추가-주차-템플릿)  
-- [정리](#정리)  
-
+- [0925 (5주차 학습)](#0925-5주차-학습)
 ---
 
 ## 0828 (1주차 학습)  
@@ -83,16 +81,74 @@
   a,b
 
 
-## 0925 (5주차 학습)
-id : 한번만 사용가능
-class : 여러번 사용가능
-/* 반응선택자 */
-h1:active {color : aqua;}
-h1:hover {color : rgb(244,123,242);}
+## 0925 (5주차 학습)  
+**주제: CSS 속성 기초, 반응/상태 선택자, 배경 속성**  
 
+### 학습 내용
+- **id / class 차이**
+  - `id`: 한 문서에서 **한 번만 사용 가능**
+  - `class`: 여러 요소에서 **여러 번 사용 가능**
 
-/* 상태선택자 */
-:checked
-:focus
-:enabled
-:disabled
+- **반응 선택자 (User Action Pseudo-classes)**
+  - `h1:active { color: aqua; }` → 클릭 시 색상 변경  
+  - `h1:hover { color: rgb(244,123,242); }` → 마우스 올렸을 때 색상 변경  
+
+- **상태 선택자 (Form State Pseudo-classes)**
+  - `:checked` → 체크박스/라디오 선택 상태  
+  - `:focus` → 입력 요소 활성화 상태  
+  - `:enabled`, `:disabled` → 사용 가능/불가능한 입력 요소  
+
+- **인라인 / 블록 요소 구별**
+  - `block`: `div`, `p`, `h1` 등 → 한 줄 전체 차지  
+  - `inline`: `span`, `a`, `img` 등 → 내용 크기만큼 차지  
+  - `inline-block`: inline처럼 흐르되 block 속성 적용 가능  
+
+- **배경 속성 (Background Property)**
+  - `background-image`: 배경 이미지 삽입  
+  - `background-size`: 배경 이미지 크기 조정  
+  - `background-repeat`: 반복 여부 (`no-repeat`)  
+  - `background-attachment`: 고정/스크롤 (`fixed`)  
+  - `background-position`: 위치 조정 (예: `0px 50%`)  
+
+- **CSS 박스 속성 (Box Model 기초)**  
+  - `border`: 테두리 (solid, dotted, dashed 등)  
+  - `margin`: 요소 바깥 여백 (상하좌우 지정 가능)  
+  - `padding`: 요소 안쪽 여백  
+  - `border-radius`: 둥근 모서리 (원형 버튼 등 가능)  
+
+- **버튼 스타일링 예시**  
+  - `box-shadow`: 그림자 효과  
+  - `linear-gradient`: 배경 색상 그라데이션  
+  - `:hover`, `:active`를 이용한 버튼 인터랙션  
+
+## 1002 (6주차 학습)  
+**주제: 글자 속성, 버튼 스타일링, 위치 속성**
+
+### 학습 내용
+- **글꼴 관련**
+  - `sans-serif` → 고딕체  
+  - `serif` → 명조체  
+  - `font-size` 단위  
+    - `px` (고정 크기), `rem` (루트 기준), `large`, `small` 등  
+  - `font-style`: `italic`, `oblique`  
+  - `font-weight`: `bold`  
+
+- **HTML vs CSS 글자 기울기**
+  - `<i>, <em>` 같은 **HTML 태그**가 CSS `font-style` 속성보다 **우선 적용됨**
+
+- **정렬 속성**
+  - `text-align: center;` → 텍스트 중앙 정렬  
+
+- **버튼 스타일링**
+  - `border`, `border-radius`: 테두리 & 둥근 모서리  
+  - `box-shadow`: 그림자 효과  
+  - `text-decoration: none;` → 링크 밑줄 제거  
+  - `line-height`로 버튼 내 텍스트 수직 정렬  
+
+- **위치 속성 (Position & Z-index)**
+  - `position: relative / absolute` → 요소 배치 기준 다름  
+  - `z-index` → 요소 쌓이는 순서 지정  
+  - `overflow` → 영역 넘침 처리 (`hidden`, `scroll`, `auto`)  
+
+- **시험 범위**
+  - 교재 p.202까지  

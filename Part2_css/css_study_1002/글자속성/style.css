@@ -1,0 +1,132 @@
+.a {
+    font-size: 32px;
+}
+.b {
+    font-size: 2rem;   
+}
+.c {
+    font-size: large;
+}
+.d {
+    font-size: small;
+}
+
+
+.a {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    
+}
+.b {
+    font-style: italic;
+}
+.c {
+    font-style: oblique;
+}
+.d {
+    font-weight: bold;
+}
+
+
+/* 인라인 요소인 span에는 적용이 안됨 */
+.c{
+    text-align: center;
+}
+.d {
+    text-align: center;
+}
+
+/* 버튼 만들기 */
+
+.button {
+    width: 150px;
+    height: 70px;
+    background-color: brown;
+    border : 10px solid rgb(191,53,53);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(139, 130, 130);
+    text-align: center;
+}
+.button > a {
+    font-size: 32px;
+    font-style: italic;
+    color : #fff;
+    /* 텍스트 꿈일수 있는 태그 */
+    text-decoration: none; 
+    font-weight: bold;
+    line-height: 70px;
+
+    
+}
+
+/* 위치 속성 */
+
+.boxWrap >.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    
+}
+
+.boxWrap {
+    /* 상대 값 */
+    position: relative;
+    width : 500px;
+    height: 500px;
+    border: 10px solid black ;
+}
+
+
+.a1 {
+   background-color: #f00;
+   z-index: 40;
+   left: 110px;
+   top: 110px;
+}
+.a2 {
+    background-color: #0f0;
+    z-index: 20;
+    left: 130px;
+    /* top: 130px; */
+    bottom: 0px;
+}
+.a3 {
+    background-color: #00f;
+    z-index: 30;
+    /* left: 150px; */
+    right: 0px;
+    top: 150px;
+}
+
+.boxWrap2 {
+    width : 500px;
+    height: 100px;
+
+    position: relative;
+    border: 10px solid black;
+
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow-y: scroll;
+}
+.boxWrap2  > div{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    
+}
+
+.a4 {
+    background-color: #f00;
+    left : 30px;
+    top : 30px;
+}
+.a5 {
+    background-color: #ffaa00;
+    left:50px;
+    top: 50px;
+}
+.a6 {
+    background-color: #ff0;
+    left: 50px;
+}
