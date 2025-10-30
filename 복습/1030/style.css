@@ -1,0 +1,51 @@
+* {
+    margin : 0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    background-color: #f6f5ef;
+    height : 120px;
+    position: relative;
+}
+
+.nav01{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    /* bottom: 0px; */
+}
+.sch {
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+}
+.nav01 >ul > li {
+    display : inline;
+}
+
+.nav02 > ul > li {
+    display: inline;
+}
+.logo , .nav02 {
+
+    text-align: center;
+}
+
+.apple_header > ul > li {
+    display: inline;
+    padding: 0px 1em;
+}
+.apple_header > ul > li > a {
+    color:#fff;
+    line-height: 44px;
+}
+.apple_header {
+    background-color: #434344;
+    height: 44px;
+    text-align: center;
+}
