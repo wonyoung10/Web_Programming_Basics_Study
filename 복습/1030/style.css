@@ -1,0 +1,97 @@
+* {
+    margin : 0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    background-color: #f6f5ef;
+    height : 120px;
+    position: relative;
+}
+
+.nav01{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    /* bottom: 0px; */
+}
+.sch {
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+}
+.nav01 >ul > li {
+    display : inline;
+}
+
+.nav02 > ul > li {
+    display: inline;
+}
+.logo , .nav02 {
+
+    text-align: center;
+}
+
+.apple_header > ul > li {
+    display: inline;
+    padding: 0px 1em;
+}
+.apple_header > ul > li > a {
+    color:#fff;
+    line-height: 44px;
+}
+.apple_header {
+    background-color: #434344;
+    height: 44px;
+    text-align: center;
+}
+/* ////////////////////////////////////////////// */
+
+#st_hd {
+    height: 120px;
+    background-color: antiquewhite;
+    margin-top: 50px;
+    border-top: 3px #434344 solid;
+}
+.st_wrap {
+    width: 1100px;
+    height: 120px;
+    background-color: aquamarine;
+    margin: 0px auto;
+    position: relative;
+}
+
+.st_logo {
+    position: absolute;
+    top:22px;
+}
+.st_menu1 {
+    position: absolute;
+    top:15px;
+    right:93px;
+}
+.st_menu1 > ul >li {
+    display: inline;
+    
+}
+
+.st_sch {
+    position: absolute;
+    top:9px;
+    right:54px;
+    width: 32px;
+    height: 32px;
+    border:1px #434344 solid;
+}
+.st_menu2 {
+    position:absolute;
+    top: 100px;
+    right: 20px;
+}
+.st_menu2 > ul > li {
+    display: inline-block;
+}

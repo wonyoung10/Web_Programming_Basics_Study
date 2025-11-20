@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_margin_position</title>
+    <style>
+        /* flex와 margin과 position을 비교해보자! */
+        /* flex와 margin과 position을 비교해보자! */
+        /* flex와 margin과 position을 비교해보자! */
+
+        /* 가운데정렬하기! */
+        /* 1. flex를 이용 */
+        /* 부모요소에 
+        display:flex; 적용후, 
+        메인축으로 가운데 정렬 justify-content: centor;
+        교차죽으로 가운데 정렬 align-items: centor; */
+
+        /* 2. margin을 이용 */
+        /* 요소 margin: 0 auto; 가로축에서 가운데 정렬,
+        단, 새로로는 auto 적용 안됨 */
+        
+        /* 3. position: absolute;를 이용 */
+        /* 요소에 position: absolute
+        부모요소에 position: relative;
+        세로로 부모요소의 절반만큼 이동 top : 50%;
+        가로로 부모요소의 절반만큼 이동 left: 50% 
+        위로 요소의 절반만큼 이동 margin-top: 음수값 적용
+        왼쪽으로 요소의 절반만큼 이동 margin-left: 음수값 적용
+        
+        */
+
+        * {
+            margin: 0;
+        }
+        .box1Wrap {
+            height: 100vh;
+            background-color: rgb(191, 193, 195);
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            position: relative;
+            
+        }
+        .box1 {
+            width: 500px; height: 200px;
+            background-color: rgb(131, 202, 202);
+            /* margin-left: auto; */
+            /* margi-Right: auto; */
+
+            /* margin: 0px auto; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1Wrap">
+        <div class="box1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+        </div>
+    </div>
+</body>
+</html>

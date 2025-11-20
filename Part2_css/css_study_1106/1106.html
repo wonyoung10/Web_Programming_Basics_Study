@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .test1 > img{
+            float: right;
+        }
+        .box1,.box2,.box3 {
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+        .box1 {
+            background-color: red;
+            /* float: left; */
+        }
+        .box2 {
+            background-color: green;
+            /* float: left; */
+        }
+        .box3 {
+            background-color: blue;
+            clear: both;
+        }
+        .box4 {
+            margin-bottom: 500px;
+            margin-top: 300px;
+            margin-left: 100px;
+        }
+        .box4 {
+            border : 3px solid black;
+            width: 300px;
+            box-shadow: 5px 5px 20px red , 20px 20px 20px blue;
+        }
+        .box4 > h1 {
+            text-shadow: 5px 5px 5px red;
+            
+        }
+
+        .box5 {
+            margin-left: 100px;
+            background-color: black;
+            width: 400px;
+            height: 200px;
+            
+            text-align: center;
+        }
+        .box5> h1 {
+            font-size: 40px;
+            text-align: center;
+            color: white;   
+        }
+        .inputBoax {
+            background-color: white;
+            border-radius: 100px;
+        }
+        .trText{
+            color: white;   
+        }
+           
+        
+        .table1 {
+            margin: auto;
+            
+        }
+
+        .trData {
+            padding: 5px 5px 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test1">
+        <img src="images/images1.jpg" alt="새새새 이미지">
+        <p>Mauris non augue a nunc vehicula gravida. Vestibulum porta pharetra elit id vestibulum. Duis non facilisis neque. Morbi interdum fringilla nulla et mattis. Cras vel ipsum lorem. Nunc pharetra, turpis sed aliquet pharetra, elit odio dignissim elit, at facilisis orci ante nec lacus. Nullam cursus massa orci, a congue sapien bibendum id. Sed ligula leo, pretium a tincidunt eget, fringilla in sem. Nam consequat molestie leo sed sagittis. In at lacus velit. Morbi urna erat, vehicula nec mauris malesuada, gravida venenatis felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin venenatis, urna luctus sodales aliquam, libero magna laoreet purus, eu venenatis velit turpis vitae tellus. Sed ut lacinia elit, quis porttitor quam. Vivamus quis fermentum tortor.
+
+            Cras aliquet magna ut ex dignissim iaculis. Praesent viverra, urna ut interdum facilisis, quam nulla eleifend dolor, efficitur commodo dui erat in elit. Aliquam non justo ipsum. Etiam sit amet pellentesque ipsum. Aenean et leo condimentum, ultrices velit sit amet, vulputate erat. Quisque fringilla tortor et posuere porta. Vivamus suscipit scelerisque nisi porttitor congue.
+            
+            Nunc sed consectetur nulla, ac ultrices ex. Suspendisse pharetra diam at ex vehicula, et molestie diam fermentum. Cras vitae urna non lectus sagittis rhoncus. Nullam pulvinar leo turpis, nec elementum leo vehicula aliquam. Mauris feugiat varius eros, eu elementum quam ultrices eu. Nulla facilisi. Vivamus justo tortor, pulvinar vitae dolor at, lacinia dignissim mi. Suspendisse a risus eu enim malesuada pretium id ut mi. Cras eget tempor justo. Integer aliquam ullamcorper pretium.
+            
+            Aenean dictum scelerisque nisl, ac pharetra erat posuere feugiat. Proin gravida orci vitae erat sollicitudin tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam volutpat cursus nunc. Aenean felis tortor, maximus quis posuere eget, venenatis sit amet felis. Vestibulum viverra metus vel semper fringilla. Nulla lacinia, nulla nec placerat volutpat, velit nunc malesuada ipsum, et tempor orci felis et sem. Proin nec molestie neque, sed convallis lacus. Donec tincidunt nisl quis eleifend sodales. Etiam eu leo nec sapien tempor pretium. Aliquam vel felis et quam accumsan sagittis. Nullam vitae risus nisi. Donec pretium purus ipsum, eu scelerisque ligula mollis ac. Aenean nec mi facilisis, efficitur lacus vel, auctor sem.
+        </p>
+        <p>Mauris non augue a nunc vehicula gravida. Vestibulum porta pharetra elit id vestibulum. Duis non facilisis neque. Morbi interdum fringilla nulla et mattis. Cras vel ipsum lorem. Nunc pharetra, turpis sed aliquet pharetra, elit odio dignissim elit, at facilisis orci ante nec lacus. Nullam cursus massa orci, a congue sapien bibendum id. Sed ligula leo, pretium a tincidunt eget, fringilla in sem. Nam consequat molestie leo sed sagittis. In at lacus velit. Morbi urna erat, vehicula nec mauris malesuada, gravida venenatis felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin venenatis, urna luctus sodales aliquam, libero magna laoreet purus, eu venenatis velit turpis vitae tellus. Sed ut lacinia elit, quis porttitor quam. Vivamus quis fermentum tortor.
+
+            Cras aliquet magna ut ex dignissim iaculis. Praesent viverra, urna ut interdum facilisis, quam nulla eleifend dolor, efficitur commodo dui erat in elit. Aliquam non justo ipsum. Etiam sit amet pellentesque ipsum. Aenean et leo condimentum, ultrices velit sit amet, vulputate erat. Quisque fringilla tortor et posuere porta. Vivamus suscipit scelerisque nisi porttitor congue.
+            
+            Nunc sed consectetur nulla, ac ultrices ex. Suspendisse pharetra diam at ex vehicula, et molestie diam fermentum. Cras vitae urna non lectus sagittis rhoncus. Nullam pulvinar leo turpis, nec elementum leo vehicula aliquam. Mauris feugiat varius eros, eu elementum quam ultrices eu. Nulla facilisi. Vivamus justo tortor, pulvinar vitae dolor at, lacinia dignissim mi. Suspendisse a risus eu enim malesuada pretium id ut mi. Cras eget tempor justo. Integer aliquam ullamcorper pretium.
+            
+            Aenean dictum scelerisque nisl, ac pharetra erat posuere feugiat. Proin gravida orci vitae erat sollicitudin tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam volutpat cursus nunc. Aenean felis tortor, maximus quis posuere eget, venenatis sit amet felis. Vestibulum viverra metus vel semper fringilla. Nulla lacinia, nulla nec placerat volutpat, velit nunc malesuada ipsum, et tempor orci felis et sem. Proin nec molestie neque, sed convallis lacus. Donec tincidunt nisl quis eleifend sodales. Etiam eu leo nec sapien tempor pretium. Aliquam vel felis et quam accumsan sagittis. Nullam vitae risus nisi. Donec pretium purus ipsum, eu scelerisque ligula mollis ac. Aenean nec mi facilisis, efficitur lacus vel, auctor sem.
+        </p>    
+    </div>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+
+    <div class="box4">
+        <h1>Lorem Ipsum</h1>
+    </div>
+    <br>
+    <br>
+
+    <div class="box5">
+        <h1>간단한 입력양식</h1>
+        <br>
+        <div >
+            <table class="table1">
+                <tr class="trBox">
+                    <td class ="trText">아이디</td>
+                    <td class ="trData"><input type="text" class="inputBoax"></td>
+                </tr>
+                <tr class="trBox">
+                    <td class ="trText">비밀번호</td>
+                    <td class ="trData"><input type="text" class="inputBoax"></td>
+                </tr>
+                <tr class="trBox">
+                    <td class ="trText"></td>
+                    <td ><div class ="inputBoax">제출</div></td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

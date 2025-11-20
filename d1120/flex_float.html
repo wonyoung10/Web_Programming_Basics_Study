@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_float</title>
+    <style>
+        /* flex와 float을 비교해보자! */
+        /* flex와 float을 비교해보자! */
+        /* flex와 float을 비교해보자! */
+
+        /* 메뉴1~4를 가로로 정렬해보기 */
+        /* 1. flex를 이용*/
+        /* 부모요소에 display:flex; 적용하기 */
+        
+        /* 2. float을 이용(1) */
+        /* 정렬 요소에 float:left; 다음 요소에  clear:both;로 float을 해제 */
+
+        /* 3. float을 이용(2) */
+        /* 정렬 요소에 float: left; 부모요소에 overflow: hidden; */
+        .container {
+            background-color: rgb(197, 197, 197);
+            
+            overflow: hidden;
+        }
+        .item {
+            padding: 20px;
+            margin: 5px;
+            float:left;
+        }
+        .item1 {
+            background-color: rgb(235, 59, 59);
+        }
+        .item2 {
+            background-color: rgb(218, 235, 59);
+        }
+        .item3 {
+            background-color: rgb(59, 235, 112);
+        }
+        .item4 {
+            background-color: rgb(59, 232, 235);
+        }
+        p {
+            /* clear:both; */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div class="container">
+        <div class="item item1">메뉴1</div>
+        <div class="item item2">메뉴2</div>
+        <div class="item item3">메뉴3</div>
+        <div class="item item4">메뉴4</div>
+    </div>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</body>
+</html>
